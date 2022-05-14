@@ -1,0 +1,50 @@
+{
+	"name": "modelfox/modelfox",
+	"version": "0.8.0",
+	"type": "library",
+	"description": "Make predictions with a ModelFox model from your PHP app. Learn more at https://www.modelfox.dev/.",
+	"keywords": [
+		"modelfox"
+	],
+	"homepage": "https://www.modelfox.dev",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "ModelFox",
+			"email": "root@modelfox.dev",
+			"homepage": "https://www.modelfox.dev",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=7.4"
+	},
+	"require-dev": {
+		"phpunit/phpunit": ">=8.0",
+		"squizlabs/php_codesniffer": "^3.0",
+		"friendsofphp/php-cs-fixer": "^3.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"modelfox\\modelfox\\": "src"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"modelfox\\modelfox\\": "tests"
+		}
+	},
+	"scripts": {
+		"test": "phpunit",
+		"check-style": "phpcs src tests",
+		"fix-style": "phpcbf src tests"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0-dev"
+		}
+	},
+	"config": {
+		"sort-packages": true
+	}
+}
